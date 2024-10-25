@@ -8,8 +8,8 @@ const App = () => {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
 
-  const API_KEY = process.env.MY_API_KEY; 
-
+  const API_KEY = process.env.REACT_APP_API_KEY; 
+  
   const fetchWeather = async () => {
     if (!city) return;
 
